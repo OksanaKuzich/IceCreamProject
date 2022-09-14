@@ -1,0 +1,54 @@
+<section class="section about" id="about">
+  <div class="container">
+    <p class="section__uppertitle">tradition and love</p>
+    <h2 class="section__title">how it’s made?</h2>
+    <div class="about__group">
+      <picture>
+        <source
+          srcset="./images/cow-ld.png 1x, ./images/cow-ld@2x.png 2x"
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/cow-md.png 1x, ./images/cow-md@2x.png 2x"
+          type="image/png"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/cow-sm.png 1x, ./images/cow-sm@2x.png 2x"
+          type="image/png"
+          media="(min-width: 320px)"
+        />
+
+        <img
+          class="about__image"
+          src="./images/cow-sm.png"
+          alt="cow end milk"
+        />
+      </picture>
+      <div class="about__group-text">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__subtext">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          <br class="about__text--br" />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="btn about__btn" data-about-modal-open>
+          Read more
+          <svg class="btn__icon about__btn-icon" width="8" height="16">
+            <use href="./icons/sprite.svg#icon-arrow-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

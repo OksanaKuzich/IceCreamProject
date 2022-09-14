@@ -1,0 +1,119 @@
+.footer {
+  background-color: #fff5f6;
+  padding-bottom: 3px;
+  &-wrap {
+    padding-bottom: 40px;
+    border-bottom: var(--border-line);
+    margin-bottom: 16px;
+  }
+  &__text {
+    width: 232px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__pr-text {
+    text-align: start;
+    display: block;
+  }
+  &__sec-text {
+    text-align: start;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__social-item {
+    display: block;
+  }
+  &__social-item + &__social-item {
+    margin-left: 30px;
+  }
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--soc-bg-color);
+    @include transition(background-color);
+    &:hover {
+      background-color: var(--sec-accent-color);
+    }
+  }
+  &__social-icon {
+    display: block;
+    fill: var(--pr-white-color);
+  }
+  &__tel {
+    @include font(12px, 700, 1.86, null);
+    font-family: var(--pr-font);
+    color: var(--sec-accent-color);
+  }
+  &__tel--text {
+    color: var(--pr-text-color);
+  }
+  &-copyright {
+    @include font(14px, 700, 1.52, null);
+    text-align: center;
+    font-family: var(--pr-font);
+    color: var(--sec-text-color);
+    width: 180px;
+  }
+}
+
+@include mq(tablet) {
+  .footer {
+    padding-bottom: 8px;
+    &-wrap {
+      margin-bottom: 8px;
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      width: 340px;
+      margin-bottom: 0;
+    }
+    &__pr-text {
+      margin-bottom: 12px;
+    }
+    &__contacts {
+      margin-top: 60px;
+    }
+    &__tel {
+      @include font(14px, 700, 1.86, null);
+    }
+    &-copyright {
+      @include font(14px, 700, 1.86, 0.02em);
+      width: 100%;
+    }
+  }
+}
+
+@include mq(desktop) {
+  .footer {
+    padding-bottom: 4px;
+    &-wrap {
+      padding-bottom: 60px;
+      margin-bottom: 7px;
+    }
+    &__text {
+      width: 480px;
+    }
+    &__contacts {
+      margin-top: 0;
+      justify-content: end;
+    }
+    &__tel {
+      @include font(16px, 700, 1.86, 0.02em);
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<div class="backdrop is-hidden" data-franchise-modal>
+  <div class="modal">
+    <button class="modal__close" data-franchise-modal-close>
+      <svg class="modal__icon-close" width="11" height="11">
+        <use href="./icons/sprite.svg#icon-apple"></use>
+      </svg>
+    </button>
+
+    <form class="modal__form">
+      <h3 class="modal__title">Leave your contacts, we will call you back</h3>
+
+      <label class="modal__label">
+        <span class="modal__text">Name</span>
+        <input
+          class="modal__input"
+          type="text"
+          name="name"
+          placeholder="Bob Marley"
+        />
+      </label>
+
+      <label class="modal__label">
+        <span class="modal__text">Phone</span>
+        <input
+          class="modal__input"
+          type="tel"
+          name="tel"
+          placeholder="+38 (111) 111 11 11"
+        />
+      </label>
+
+      <label class="modal__label">
+        <span class="modal__text">Email</span>
+        <input
+          class="modal__input"
+          type="email"
+          name="email"
+          placeholder="example@example.com"
+        />
+      </label>
+
+      <label class="modal__label">
+        <span class="modal__text">Comment</span>
+        <textarea
+          class="modal__textarea"
+          name="comment"
+          rows="10"
+          placeholder="Type comment"
+        ></textarea>
+      </label>
+
+      <div class="modal__radio">
+        <p class="modal__text">Make your choice:</p>
+        <label class="modal__label-radio">
+          <input
+            class="modal__input-radio"
+            type="radio"
+            name="level"
+            value="1 level"
+            checked
+          />
+          <span class="custom-radio-btn"></span>
+          <span class="modal__text-radio">1 level (Royalty 10%)</span>
+        </label>
+
+        <label class="modal__label-radio">
+          <input
+            class="modal__input-radio"
+            type="radio"
+            name="level"
+            value="2 level"
+          />
+          <span class="custom-radio-btn"></span>
+          <span class="modal__text-radio">2 level (Royalty 15%)</span>
+        </label>
+
+        <label class="modal__label-radio">
+          <input
+            class="modal__input-radio"
+            type="radio"
+            name="level"
+            value="3 level"
+          />
+          <span class="custom-radio-btn"></span>
+          <span class="modal__text-radio">3 level (Royalty 20%)</span>
+        </label>
+      </div>
+
+      <label class="modal__checkbox">
+        <input class="modal__checkbox-input" type="checkbox" name="confirm" />
+        <svg class="modal__checkbox-icon" width="14" height="14">
+          <use href="./icons/sprite.svg#icon-candy"></use>
+        </svg>
+        <span class="modal__checbox-text">Just tap here</span>
+      </label>
+
+      <button class="btn modal__button" type="submit">Send</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="backdrop is-hidden" data-map-modal>
+    <div class="modal">
+        <button class="modal__close" data-map-modal-close>
+      <svg class="modal__icon-close" width="11" height="11">
+        <use href="./icons/sprite.svg#icon-apple"></use>
+      </svg>
+    </button>
+        <h3 class="modal__title">Our locations</h3>
+        <ul class="map-modal__list">
+            <li class="map-modal__item">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/Chicago-lg.png 1x, ./images/Chicago-lg@2x.png 2x" type="image/png" />
+                    <source media="(min-width: 768px)" srcset="./images/Chicago-md.png 1x, ./images/Chicago-md@2x.png 2x" type="image/png" />
+                    <source media="(max-width: 767px)" srcset="./images/Chicago-sm.png 1x, ./images/Chicago-sm@2x.png 2x" type="image/png" />
+                    <img class="img map-modal__img" src="./images/Chicago-sm.png" alt="Chicago-location " width="200" height="150" />
+                </picture>
+            </li>
+            <li class="map-modal__item">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="
+              ./images/Los-Angeles-lg.png 1x,
+              ./images/Chicago-lg@2x.png  2x
+            " type="image/png" />
+                    <source media="(min-width: 768px)" srcset="
+              ./images/Los-Angeles-md.png 1x,
+              ./images/Chicago-md@2x.png  2x
+            " type="image/png" />
+                    <source media="(max-width: 767px)" srcset="
+              ./images/Los-Angeles-sm.png 1x,
+              ./images/Chicago-sm@2x.png  2x
+            " type="image/png" />
+
+                    <img class="img map-modal__img" src="./images/Los-Angeles-sm.png" alt="Los-Angeles-location " width="200" height="150" />
+                </picture>
+            </li>
+            <li class="map-modal__item">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/New-York-lg.png 1x, ./images/Chicago-lg@2x.png 2x" type="image/png" />
+                    <source media="(min-width: 768px)" srcset="./images/New-York-md.png 1x, ./images/Chicago-md@2x.png 2x" type="image/png" />
+                    <source media="(max-width: 767px)" srcset="./images/New-York-sm.png 1x, ./images/Chicago-sm@2x.png 2x" type="image/png" />
+
+                    <img class="img map-modal__img" src="./images/New-York-sm.png" alt="New-York-location " width="200" height="150" />
+                </picture>
+            </li>
+        </ul>
+    </div>
+</div>

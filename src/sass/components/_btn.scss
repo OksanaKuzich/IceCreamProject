@@ -1,0 +1,40 @@
+// General styles for a button
+// Основні стилі кнопок
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  justify-content: center;
+  height: 44px;
+  border-radius: 22px;
+  border: transparent;
+
+  color: var(--sec-accent-color);
+  background-color: var(--pr-white-color);
+
+  font-family: var(--pr-font);
+  font-size: var(--primary-fz);
+  font-weight: 700;
+  line-height: 1.28;
+
+  cursor: pointer;
+
+  @include transition(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-accent-cl);
+    color: var(--sec-accent-color);
+  }
+}
+.btn__icon {
+  fill: currentColor;
+  margin-left: 16px;
+  margin-bottom: -1px;
+
+  @include mq(tablet) {
+    margin-left: 12px;
+  }
+}

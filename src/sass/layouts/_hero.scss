@@ -1,0 +1,361 @@
+.hero {
+  height: 502px;
+  background-color: var(--pr-bg-color);
+  overflow: hidden;
+
+  @include mq(tablet) {
+    height: 416px;
+  }
+  @include mq(desktop) {
+    height: 664px;
+  }
+}
+
+.hero__container {
+  height: 100%;
+  position: relative;
+}
+
+.hero__ellipse {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  bottom: 0;
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: var(--pr-accent-color);
+
+  @include mq(tablet) {
+    width: 335px;
+    height: 335px;
+    bottom: 40px;
+    left: 248px;
+  }
+
+  @include mq(desktop) {
+    width: 534px;
+    height: 534px;
+    bottom: 77px;
+    left: 517px;
+  }
+}
+
+.hero__image-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+
+  animation: appearance 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
+
+  @include mq(tablet) {
+    width: 143px;
+    right: 270px;
+  }
+
+  @include mq(desktop) {
+    width: 236px;
+    right: 328px;
+  }
+
+  .hero:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.hero__image-milk {
+  display: none;
+
+  @include mq(tablet) {
+    position: absolute;
+    left: 32px;
+    bottom: 16px;
+
+    display: block;
+
+    animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  }
+
+  @include mq(desktop) {
+    width: 213px;
+    left: 16px;
+    bottom: 60px;
+  }
+}
+
+.hero__image-girl {
+  display: none;
+
+  @include mq(tablet) {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+
+    display: block;
+
+    animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1) 300ms;
+  }
+
+  @include mq(desktop) {
+    width: 304px;
+    right: 16px;
+  }
+}
+
+.hero__title-wrapper {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 50%;
+
+  @include mq(mobile-only) {
+    transform: translate(0, -50%);
+  }
+
+  @include mq(tablet) {
+    left: 32px;
+    top: 102px;
+  }
+
+  @include mq(desktop) {
+    left: 16px;
+    top: 147px;
+  }
+}
+
+.hero__title {
+  @include font(48px, 400, 0.97);
+  color: var(--sec-accent-color);
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  max-width: 218px;
+  margin-bottom: 20px;
+
+  @include mq(tablet) {
+    max-width: 162px;
+    @include font(34px, 400, 0.91, 0.04em);
+  }
+
+  @include mq(desktop) {
+    max-width: 277px;
+    font-size: 58px;
+  }
+}
+
+.hero__title--whitecolor {
+  display: block;
+  @include font(26px, 400, 1.15, 0.04em);
+  color: var(--pr-white-color);
+
+  @include mq(tablet) {
+    font-size: 22px;
+  }
+  @include mq(desktop) {
+    font-size: 38px;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+}
+
+.hero__buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6.5px 16px;
+  border-radius: 20px;
+  border: transparent;
+  min-width: 62px;
+  cursor: pointer;
+
+  @include font(8px, 400, 1.3);
+  @include transition(scale, background-color, color);
+
+  @include mq(desktop) {
+    font-size: var(--primary-fz);
+    min-width: 107px;
+    padding: 11px 16px;
+  }
+}
+
+.hero__btn--red {
+  color: var(--pr-white-color);
+  background-color: var(--sec-accent-color);
+
+  &:hover,
+  &:focus {
+    background: var(--pr-white-color);
+    color: var(--sec-accent-color);
+  }
+}
+
+.hero__btn--white {
+  color: var(--sec-accent-color);
+  background-color: var(--pr-white-color);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-accent-cl);
+  }
+  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
+}
+
+.hero__numbers {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    top: 94px;
+  }
+  @include mq(desktop) {
+    top: 156px;
+    right: 34px;
+  }
+}
+
+.hero__number {
+  @include font(28px, 400, 1.15, 0.04em);
+  font-family: var(--title-font);
+  color: var(--sec-accent-color);
+  margin-bottom: 2px;
+
+  @include mq(desktop) {
+    font-size: 46px;
+  }
+  // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+}
+
+.hero__ellipse--sm {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--pr-white-color);
+
+  @include mq(desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__decorative {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 32px;
+    top: 92px;
+  }
+
+  @include mq(desktop) {
+    right: 16px;
+    top: 152px;
+  }
+}
+
+.hero__decorative-item:not(:last-child) {
+  margin-bottom: 44px;
+
+  @include mq(desktop) {
+    margin-bottom: 62px;
+  }
+}
+
+.hero__numbers-item {
+  text-align: end;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.hero__text {
+  color: var(--pr-white-color);
+  @include font(8px, 400, 1.3);
+
+  @include mq(desktop) {
+    font-size: var(--primary-fz);
+  }
+}
+
+.hero__descr-container {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+    position: absolute;
+    bottom: 36px;
+    left: 184px;
+    max-width: 114px;
+  }
+
+  @include mq(desktop) {
+    bottom: 74px;
+    left: 229px;
+    max-width: 200px;
+  }
+}
+
+.hero__descr {
+  // font-family: var(--pr-font);
+  color: var(--pr-white-color);
+  @include font(8px, 400, 1.5);
+  margin-bottom: 7px;
+
+  @include mq(desktop) {
+    font-size: var(--primary-fz);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__descr-more {
+  display: none;
+}
+
+.hero__descr.show-more .hero__descr-more {
+  display: inline;
+}
+
+.hero__descr.show-more .hero__descr-container {
+  max-width: 300px;
+}
+
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background-color: var(--pr-white-color);
+
+  @include transition(transform);
+
+  @include mq(desktop) {
+    width: 26px;
+    height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1) translate(10%, 0);
+  }
+}
+
+.btn-arrow__icon {
+  fill: var(--sec-accent-color);
+}

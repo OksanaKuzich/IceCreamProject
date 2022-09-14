@@ -1,0 +1,51 @@
+
+<div class="backdrop is-hidden" data-about-modal>
+  <div class="modal">
+    <button class="modal__close" data-about-modal-close>
+      <svg class="modal__icon-close" width="11" height="11">
+        <use href="./icons/sprite.svg#icon-apple"></use>
+      </svg>
+    </button>
+
+     <form class="modal__form">
+ <div class="about__modal-group">
+    <h2 class="section__title modal__title">how it’s made?</h2>
+        <p class="about__modal-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <picture>
+        <source
+          srcset="/src/images/milk-ld.png 1x, /src/images/milk-ld@2x.png 2x"
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="/src/images/milk-md.png 1x, /src/images/milk-md@2x.png 2x"
+          type="image/png"
+          media="(min-width: 768px)"
+        />
+
+       <!---- <source
+          srcset="/src/images/milk-sm.png 1x, /src/mages/milk-sm@2x.png 2x"
+          type="image/png"
+          media="(min-width: 320px)"
+        />-->
+
+        <img
+          class="about__modal-image"
+          src="/src/images/milk-md.png"
+          alt="cow end milk"
+        />
+      </picture>
+      </div>
+    </form>
+  </div>
+</div>

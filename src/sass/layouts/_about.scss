@@ -1,0 +1,115 @@
+.about {
+  background-color: #fff5f6;
+  padding-bottom: 0;
+}
+
+.about__group {
+  background-image: url(../images/bg_milk-sm.png);
+  background-repeat: no-repeat;
+  background-position: 0 390px;
+  background-size: contain;
+  padding-bottom: 0;
+
+  @include mq(retina) {
+    background-image: url(../images/bg_milk-sm@2x.png);
+  }
+
+  @include mq(tablet) {
+    background-image: none;
+    display: flex;
+  }
+
+  @include mq(desktop) {
+    background-image: url(../images/bg_milk-ld.png);
+    background-position: 50% 50%;
+
+    @include mq(retina) {
+      background-image: url(../images/bg_milk-ld@2x.png);
+    }
+  }
+}
+
+.about__group-text {
+  @include transition(transform);
+
+  @include mq(tablet) {
+    margin-left: 32px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 99px;
+  }
+}
+
+.about__text {
+  font-family: var(--pr-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--pr-text-color);
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+  width: 220px;
+
+  @include mq(tablet) {
+    font-size: 14px;
+    width: 334px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    width: 463px;
+  }
+}
+
+.about__subtext {
+  font-family: var(--pr-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+
+  margin-bottom: 20px;
+  width: 220px;
+
+  @include mq(tablet) {
+    font-size: 14px;
+    width: 334px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    width: 463px;
+  }
+}
+
+.about__image {
+  @include transition(transform);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.about__btn {
+  min-width: 176px;
+  font-size: 14px;
+  line-height: 1.28px;
+  text-align: center;
+  color: var(--sec-accent-color);
+  background: var(--pr-white-color);
+  border-radius: 22px;
+  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.about__btn-icon {
+  fill: var(--sec-accent-color);
+}

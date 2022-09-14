@@ -1,0 +1,131 @@
+<section class="hero">
+  <div class="container hero__container">
+    <span class="hero__ellipse"></span>
+    <div class="hero__title-wrapper">
+      <h1 class="hero__title">
+        <span class="hero__title--whitecolor">Ice Cream made with</span>passion
+      </h1>
+      <ul class="hero__buttons">
+        <li class="hero__buttons-item">
+          <a href="#products" class="hero__btn hero__btn--red">Products</a>
+        </li>
+        <li class="hero__buttons-item">
+          <a href="#about" class="hero__btn hero__btn--white">How it's made?</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="hero__images">
+      <li class="hero__images-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /src/images/ice_hero-ld.png    1x,
+              /src/images/ice_hero-ld@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /src/images/ice_hero-md.png    1x,
+              /src/images/ice_hero-md@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /src/images/ice_hero-sm.png    1x,
+              /src/images/ice_hero-sm@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image-icecream"
+            src="/src/images/ice_hero-sm.png"
+            alt="Ice Cream"
+            width="171"
+            height="410"
+          />
+        </picture>
+      </li>
+      <li class="hero__images-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/src/images/milk-ld.png 1x, /src/images/milk-ld@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/images/milk-md.png 1x, /src/images/milk-md@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            class="hero__image-milk"
+            src="/src/images/milk-md.png"
+            alt="Ice Cream"
+            width="152"
+            height="154"
+          />
+        </picture>
+      </li>
+      <li class="hero__images-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/src/images/tasty-ld.png 1x, /src/images/tasty-ld@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/images/tasty-md.png 1x, /src/images/tasty-md@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            class="hero__image-girl"
+            src="/src/images/tasty-md.png"
+            alt="Ice Cream"
+            width="190"
+            height="150"
+          />
+        </picture>
+      </li>
+    </ul>
+    <ul class="hero__numbers">
+      <li class="hero__numbers-item">
+        <p class="hero__number">16</p>
+        <p class="hero__text">cafes</p>
+      </li>
+      <li class="hero__numbers-item">
+        <p class="hero__number">23</p>
+        <p class="hero__text">food trucks</p>
+      </li>
+    </ul>
+    <ul class="hero__decorative">
+      <li class="hero__decorative-item">
+        <span class="hero__ellipse--sm"></span>
+      </li>
+      <li class="hero__decorative-item">
+        <span class="hero__ellipse--sm"></span>
+      </li>
+    </ul>
+    <div class="hero__descr-container">
+      <p class="hero__descr">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        est saepe necessitatibus accusantium consequatur
+        <span class="hero__descr-more"
+          >ipsum dolor sit amet consectetur adipisicing elit. Eos, harum?
+          Reprehenderit est saepe necessitatibus</span
+        >
+      </p>
+      <button class="btn-arrow" type="button">
+        <svg class="btn-arrow__icon" width="9" height="9">
+          <use href="/src/icons/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

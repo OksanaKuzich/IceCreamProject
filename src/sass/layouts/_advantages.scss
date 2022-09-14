@@ -1,0 +1,173 @@
+.advantages {
+  padding-top: 60px;
+  background-color: #fff5f6;
+}
+
+.advantages__list {
+  display: grid;
+  gap: 32px;
+  word-wrap: break-word;
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+  }
+}
+
+.advantages__item {
+  width: 230px;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+  }
+
+  @include mq(desktop) {
+    width: 288px;
+  }
+
+  &-1::before {
+    display: block;
+    margin-bottom: 16px;
+    content: '';
+    width: 33px;
+    height: 50px;
+    background: url(../images/advantages_1-sm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(retina) {
+      background: url(../images/advantages_1-sm@2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 36px;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 40px;
+    }
+
+    animation: scale 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+  }
+
+  &-2::before {
+    display: block;
+    margin-bottom: 16px;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url(../images/advantages_2-sm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(retina) {
+      background: url(../images/advantages_2-sm@2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 36px;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 40px;
+    }
+
+    animation: scale 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+  }
+
+  &-3::before {
+    display: block;
+    margin-bottom: 16px;
+    content: '';
+    width: 46px;
+    height: 50px;
+    background: url(../images/advantages_3-sm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(retina) {
+      background: url(../images/advantages_3-sm@2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 36px;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 40px;
+    }
+
+    animation: scale 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+  }
+}
+
+.advantages__amount {
+  margin-bottom: 16px;
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--sec-accent-color);
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desctop) {
+    font-size: 58px;
+  }
+
+  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+}
+
+.advantages__text {
+  font-family: var(--pr-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: var(--pr-text-color);
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desctop) {
+    font-size: 16px;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: none;
+  }
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
